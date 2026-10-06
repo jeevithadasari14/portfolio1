@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevitha Dasari | Portfolio</title>
+    <meta name="description" content="Portfolio of Jeevitha Dasari — Data Analyst & Machine Learning Enthusiast">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+
+<body>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">JD<span class="logo-dot">.</span></a>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                    <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                    <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== HERO ==================== -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <div class="hero-orb hero-orb-1"></div>
+                <div class="hero-orb hero-orb-2"></div>
+                <div class="hero-orb hero-orb-3"></div>
+                <div class="hero-grid"></div>
+            </div>
+
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting reveal">Hello, I'm</p>
+                    <h1 class="hero-name reveal">Jeevitha <span class="gradient-text">Dasari</span></h1>
+                    <p class="hero-role reveal">Data Analyst <span class="role-divider">|</span> Machine Learning
+                        Enthusiast</p>
+                    <p class="hero-tagline reveal">Transforming raw data into actionable insights through analytics,
+                        visualization, and machine learning.</p>
+
+                    <div class="hero-cta reveal">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <button class="btn btn-outline" id="downloadResumeBtn">Download Resume</button>
+                    </div>
+
+                    <div class="hero-social reveal">
+                        <!-- TODO: Replace with actual LinkedIn URL -->
+                        <a href="[linkedin.com/in/your-profile]" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <!-- TODO: Replace with actual email address -->
+                        <a href="mailto:[your-email@example.com]" class="social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="hero-card">
+                        <div class="hero-card-header">
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                            <span class="card-dot"></span>
+                        </div>
+                        <div class="hero-card-body">
+                            <div class="code-line"><span class="code-keyword">import</span> <span
+                                    class="code-module">pandas</span> <span class="code-keyword">as</span> <span
+                                    class="code-var">pd</span></div>
+                            <div class="code-line"><span class="code-keyword">import</span> <span
+                                    class="code-module">numpy</span> <span class="code-keyword">as</span> <span
+                                    class="code-var">np</span></div>
+                            <div class="code-line">&nbsp;</div>
+                            <div class="code-line"><span class="code-comment"># Load & explore data</span></div>
+                            <div class="code-line"><span class="code-var">df</span> = <span
+                                    class="code-module">pd</span>.<span class="code-func">read_csv</span>(<span
+                                    class="code-string">"data.csv"</span>)</div>
+                            <div class="code-line"><span class="code-var">df</span>.<span
+                                    class="code-func">head</span>()</div>
+                            <div class="code-line">&nbsp;</div>
+                            <div class="code-line"><span class="code-comment"># Build ML model</span></div>
+                            <div class="code-line"><span class="code-var">model</span> = <span
+                                    class="code-module">RandomForestClassifier</span>()</div>
+                            <div class="code-line"><span class="code-var">model</span>.<span
+                                    class="code-func">fit</span>(<span class="code-var">X_train</span>, <span
+                                    class="code-var">y_train</span>)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+                <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- ==================== ABOUT ==================== -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <p class="section-subtitle">A brief introduction</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <h3>Who I Am</h3>
+                        <!-- TODO: Replace with actual bio -->
+                        <p>[Write a brief bio about yourself — your background, what drives you, and your professional
+                            focus. Mention your education at BVCITS and your interest in data analytics and machine
+                            learning.]</p>
+                        <p>[Add a second paragraph about your approach to problem-solving, your curiosity for data, and
+                            what you're looking for in your next opportunity.]</p>
+
+                        <div class="about-details">
+                            <div class="about-detail-item">
+                                <span class="detail-icon">&#9906;</span>
+                                <div>
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">Hyderabad, India</span>
+                                </div>
+                            </div>
+                            <div class="about-detail-item">
+                                <span class="detail-icon">&#9993;</span>
+                                <div>
+                                    <span class="detail-label">Email</span>
+                                    <!-- TODO: Replace with actual email -->
+                                    <span class="detail-value">[your-email@example.com]</span>
+                                </div>
+                            </div>
+                            <div class="about-detail-item">
+                                <span class="detail-icon">&#9742;</span>
+                                <div>
+                                    <span class="detail-label">Phone</span>
+                                    <!-- TODO: Replace with actual phone number -->
+                                    <span class="detail-value">[your-phone-number]</span>
+                                </div>
+                            </div>
+                            <div class="about-detail-item">
+                                <span class="detail-icon">&#128188;</span>
+                                <div>
+                                    <span class="detail-label">LinkedIn</span>
+                                    <!-- TODO: Replace with actual LinkedIn URL -->
+                                    <span class="detail-value">[linkedin.com/in/your-profile]</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-highlights reveal">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">&#128202;</div>
+                            <h4>Data Analysis</h4>
+                            <p>Skilled in exploratory data analysis, statistical analysis, and deriving meaningful
+                                insights from complex datasets.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">&#129302;</div>
+                            <h4>Machine Learning</h4>
+                            <p>Experience with supervised learning algorithms, model evaluation, and building predictive
+                                models.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">&#128200;</div>
+                            <h4>Visualization</h4>
+                            <p>Proficient in creating compelling visualizations with Power BI, Matplotlib, and Seaborn
+                                to communicate findings.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">&#128196;</div>
+                            <h4>Reporting</h4>
+                            <p>Advanced Excel skills for data organization, pivot tables, and creating comprehensive
+                                reports.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SKILLS ==================== -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category reveal">
+                        <div class="skill-category-header">
+                            <span class="skill-category-icon">&#128187;</span>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-cards">
+                            <div class="skill-card">
+                                <div class="skill-icon">Py</div>
+                                <h4>Python</h4>
+                                <p>Core language for data analysis, ML scripting, and automation.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">SQL</div>
+                                <h4>SQL</h4>
+                                <p>Querying, joining, and manipulating relational databases.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Analysis & Visualization -->
+                    <div class="skill-category reveal">
+                        <div class="skill-category-header">
+                            <span class="skill-category-icon">&#128202;</span>
+                            <h3>Data Analysis & Visualization</h3>
+                        </div>
+                        <div class="skill-cards">
+                            <div class="skill-card">
+                                <div class="skill-icon">Pd</div>
+                                <h4>Pandas</h4>
+                                <p>Data manipulation, cleaning, and transformation.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">Np</div>
+                                <h4>NumPy</h4>
+                                <p>Numerical computing and array operations.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">EDA</div>
+                                <h4>EDA</h4>
+                                <p>Exploratory Data Analysis for pattern discovery.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">Mpl</div>
+                                <h4>Matplotlib</h4>
+                                <p>Static, animated, and interactive visualizations.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">Sns</div>
+                                <h4>Seaborn</h4>
+                                <p>Statistical data visualization built on Matplotlib.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skill-category reveal">
+                        <div class="skill-category-header">
+                            <span class="skill-category-icon">&#128736;</span>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skill-cards">
+                            <div class="skill-card">
+                                <div class="skill-icon">XL</div>
+                                <h4>Excel</h4>
+                                <p>Advanced formulas, pivot tables, and data modeling.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">BI</div>
+                                <h4>Power BI</h4>
+                                <p>Interactive dashboards and business intelligence reports.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="skill-category reveal">
+                        <div class="skill-category-header">
+                            <span class="skill-category-icon">&#129302;</span>
+                            <h3>Machine Learning</h3>
+                        </div>
+                        <div class="skill-cards">
+                            <div class="skill-card">
+                                <div class="skill-icon">Sk</div>
+                                <h4>Scikit-learn</h4>
+                                <p>ML algorithms, pipelines, and model selection.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">Rg</div>
+                                <h4>Regression</h4>
+                                <p>Linear, polynomial, and regularized regression models.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">Cl</div>
+                                <h4>Classification</h4>
+                                <p>Logistic regression, decision trees, SVM, and ensemble methods.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">SL</div>
+                                <h4>Supervised Learning</h4>
+                                <p>Training models on labeled data for prediction tasks.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">ME</div>
+                                <h4>Model Evaluation</h4>
+                                <p>Cross-validation, confusion matrices, ROC-AUC, and metrics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECTS ==================== -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Featured work and implementations</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Employee Salary Analytics -->
+                    <div class="project-card reveal">
+                        <div class="project-header">
+                            <div class="project-icon">&#128178;</div>
+                            <h3>Employee Salary Analytics</h3>
+                        </div>
+                        <!-- TODO: Replace with actual project description -->
+                        <p class="project-description">[Provide a detailed description of the Employee Salary Analytics
+                            project — the problem it solves, the dataset used, key analyses performed, and insights
+                            derived.]</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <!-- TODO: Replace with actual technologies used -->
+                            <span class="tech-tag">[Technology 2]</span>
+                            <span class="tech-tag">[Technology 3]</span>
+                            <span class="tech-tag">[Technology 4]</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- TODO: Replace with actual project link (GitHub, live demo, etc.) -->
+                            <a href="[project-link]" target="_blank" rel="noopener noreferrer" class="project-link">View
+                                Project &#8599;</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Cats vs Dogs Image Classification -->
+                    <div class="project-card reveal">
+                        <div class="project-header">
+                            <div class="project-icon">&#128062;</div>
+                            <h3>Cats vs Dogs Image Classification using CNN</h3>
+                        </div>
+                        <!-- TODO: Replace with actual project description -->
+                        <p class="project-description">[Provide a detailed description of the Cats vs Dogs Image
+                            Classification project — the CNN architecture used, dataset details, training approach, and
+                            accuracy achieved.]</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <!-- TODO: Replace with actual technologies used -->
+                            <span class="tech-tag">[Technology 2]</span>
+                            <span class="tech-tag">[Technology 3]</span>
+                            <span class="tech-tag">[Technology 4]</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- TODO: Replace with actual project link (GitHub, live demo, etc.) -->
+                            <a href="[project-link]" target="_blank" rel="noopener noreferrer" class="project-link">View
+                                Project &#8599;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EDUCATION ==================== -->
+        <section id="education" class="section education">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+                    <p class="section-subtitle">Academic background and qualifications</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- BVCITS -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year"><!-- TODO: Replace with actual years -->[Year] – [Year]</span>
+                            <h3>BVCITS</h3>
+                            <p class="timeline-degree">[Degree/Program Name]</p>
+                            <p class="timeline-cgpa">CGPA: <!-- TODO: Replace with actual CGPA -->[X.XX]</p>
+                            <!-- TODO: Replace with actual description -->
+                            <p class="timeline-description">[Add details about your coursework, achievements, or
+                                activities at BVCITS.]</p>
+                        </div>
+                    </div>
+
+                    <!-- Sri Chaitanya Junior College -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year"><!-- TODO: Replace with actual years -->[Year] – [Year]</span>
+                            <h3>Sri Chaitanya Junior College</h3>
+                            <p class="timeline-degree">[Stream/Program Name]</p>
+                            <p class="timeline-cgpa">CGPA: <!-- TODO: Replace with actual CGPA -->[X.XX]</p>
+                            <!-- TODO: Replace with actual description -->
+                            <p class="timeline-description">[Add details about your studies, achievements, or activities
+                                at Sri Chaitanya Junior College.]</p>
+                        </div>
+                    </div>
+
+                    <!-- Ravindra Bharathi School -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year"><!-- TODO: Replace with actual years -->[Year] – [Year]</span>
+                            <h3>Ravindra Bharathi School</h3>
+                            <p class="timeline-degree">[Grade/Program Name]</p>
+                            <p class="timeline-cgpa">CGPA: <!-- TODO: Replace with actual CGPA -->[X.XX]</p>
+                            <!-- TODO: Replace with actual description -->
+                            <p class="timeline-description">[Add details about your studies, achievements, or activities
+                                at Ravindra Bharathi School.]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CERTIFICATIONS ==================== -->
+        <section id="certifications" class="section certifications">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+                    <p class="section-subtitle">Professional certifications and credentials</p>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Deloitte -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon">&#127942;</div>
+                        <div class="cert-body">
+                            <!-- TODO: Replace with actual certification name -->
+                            <h3>[Certification Name]</h3>
+                            <p class="cert-issuer">Deloitte</p>
+                            <!-- TODO: Replace with actual year if available -->
+                            <p class="cert-year">[Year]</p>
+                            <!-- TODO: Replace with actual description -->
+                            <p class="cert-description">[Add a brief description of the certification and what it
+                                covers.]</p>
+                        </div>
+                    </div>
+
+                    <!-- Tata -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon">&#127942;</div>
+                        <div class="cert-body">
+                            <!-- TODO: Replace with actual certification name -->
+                            <h3>[Certification Name]</h3>
+                            <p class="cert-issuer">Tata</p>
+                            <!-- TODO: Replace with actual year if available -->
+                            <p class="cert-year">[Year]</p>
+                            <!-- TODO: Replace with actual description -->
+                            <p class="cert-description">[Add a brief description of the certification and what it
+                                covers.]</p>
+                        </div>
+                    </div>
+
+                    <!-- SmartInternz -->
+                    <div class="cert-card reveal">
+                        <div class="cert-icon">&#127942;</div>
+                        <div class="cert-body">
+                            <!-- TODO: Replace with actual certification name -->
+                            <h3>[Certification Name]</h3>
+                            <p class="cert-issuer">SmartInternz</p>
+                            <!-- TODO: Replace with actual year if available -->
+                            <p class="cert-year">[Year]</p>
+                            <!-- TODO: Replace with actual description -->
+                            <p class="cert-description">[Add a brief description of the certification and what it
+                                covers.]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT ==================== -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                    <p class="section-subtitle">Let's connect and discuss opportunities</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h3>Let's talk about your next project</h3>
+                        <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about
+                            data and technology.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <span class="contact-icon">&#9993;</span>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <!-- TODO: Replace with actual email -->
+                                    <a href="mailto:[your-email@example.com]"
+                                        class="contact-value">[your-email@example.com]</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <span class="contact-icon">&#9742;</span>
+                                <div>
+                                    <span class="contact-label">Phone</span>
+                                    <!-- TODO: Replace with actual phone number -->
+                                    <a href="tel:[your-phone-number]" class="contact-value">[your-phone-number]</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <span class="contact-icon">&#9906;</span>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Hyderabad, India</span>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <span class="contact-icon">&#128188;</span>
+                                <div>
+                                    <span class="contact-label">LinkedIn</span>
+                                    <!-- TODO: Replace with actual LinkedIn URL -->
+                                    <a href="[linkedin.com/in/your-profile]" target="_blank" rel="noopener noreferrer"
+                                        class="contact-value">[linkedin.com/in/your-profile]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-actions reveal">
+                        <a href="mailto:[your-email@example.com]" class="btn btn-primary btn-large">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                            Send Email
+                        </a>
+                        <!-- TODO: Replace with actual LinkedIn URL -->
+                        <a href="[linkedin.com/in/your-profile]" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-large">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                            Connect on LinkedIn
+                        </a>
+                        <button class="btn btn-outline btn-large" id="downloadResumeBtn2">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                            </svg>
+                            Download Resume
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-copy">&copy; <span id="footerYear">2026</span> Jeevitha Dasari. All rights reserved.
+                </p>
+                <p class="footer-built">Built with HTML5, CSS3 & Vanilla JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        </svg>
+    </button>
+
+    <!-- ==================== TOAST NOTIFICATION ==================== -->
+    <div class="toast" id="toast" role="alert" aria-live="polite">
+        <span class="toast-message" id="toastMessage"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
